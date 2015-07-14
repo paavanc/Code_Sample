@@ -1,0 +1,41 @@
+#help {
+position: absolute;
+top: 1em;
+right: 22em;
+font-family: Tahoma;
+font-size: 11px;
+background-color: #434542;
+padding: 4px;
+}
+
+table,td {
+border:1px solid black;
+}
+
+th, td
+{
+padding:15px;
+}
+
+
+a:link {color:#000000;}      /* unvisited link */
+a:visited {color:#000000;}  /* visited link */
+a:hover {color:#000000;}  /* mouse over link */
+a:active {color:#000000;}  /* selected link */
+
+
+#header{ 
+	margin:0 auto; width:1000px; text-align:center; 
+}
+#footer { 
+	margin:0 auto; width:1000px; text-align:center; 
+}
+
+#containerActivity { 
+	margin:0 auto; overflow:auto; padding:5px; width:900px; background: #FFFFFF; height: 600px; 
+}
+#contentActivity{
+	padding-right: 0px; background: #FFFFFF;
+}
+
+

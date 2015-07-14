@@ -1,0 +1,33 @@
+
+How to Run:
+
+Put the directory in the htdocs of the MAMP application. And run it once the servers are up.
+Go to the Login file and click on the login.php file.
+
+Details:
+
+-The different directories represent the different activities of this project.  All files run the same way.  Your have an action.php, actionActivity.php, actionStub.php, actionAPI.php and get.php file.  The action file runs the whole activity, the activity holds the front end content, the api holds all the database calls and the get.php file helps display our pictures.  Within the actionAcivity class, we usually have a context variable which is updated once a form is entered.  Once this update happens, the result which the user wants happens.
+
+Assumptions:
+
+A user can only like a particular photo once
+A user can only use the same tag or comment only once on a particular photo
+A user cannot friend himself
+A user cannot friend someone more than once
+A user can only search using one photo/tag at a time
+Every album, user and photo has a unique id
+Anonymous users can only comment on pictures
+
+Resources:
+
+https://www.youtube.com/watch?v=o-0bfleqE2g -to figure out how to print pictures -aka get.php
+
+http://www.w3schools.com/php/php_mysql_select.asp - to figure out how to get infromation from sql database
+http://www.w3schools.com/php/php_mysql_create.asp - how to create a database
+http://php.net/manual/en/function.array-count-values.php- how to organize arrays PHP
+CS411 - used some old code from a previous project for login and registration --all file use a similar format
+-also used seperation of code principles from this class - like api class + code set up
+
+Note:
+
+code for schema located in he DATA_API file called CS460Model.php -- DATA_API/CS460Model.php

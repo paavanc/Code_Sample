@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="MapViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-gw-cFq">
+                                <rect key="frame" x="0.0" y="84" width="600" height="529"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="77" width="400" height="474"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-100" y="115" width="600" height="636"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="QlX-3I-icm"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGI-Tf-cDu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="listmenu.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="254" y="34" width="47" height="50"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="1VA-KQ-qBQ" kind="show" id="m1P-MB-Ewq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop-in.png" translatesAutoresizingMaskIntoConstraints="NO" id="mgj-qd-B9s">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="40" width="37" height="38"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users_addDrop.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Qs-SS-g7T">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="40" width="37" height="38"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSe-d3-efm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="86" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbler.png" translatesAutoresizingMaskIntoConstraints="NO" id="uW1-Gm-WE2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="174" y="40" width="37" height="38"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td1-YW-cT1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="86" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fountain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOi-4a-mba">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="174" y="86" width="71" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PGI-Tf-cDu"/>
+                                <exclude reference="mgj-qd-B9s"/>
+                                <exclude reference="9Qs-SS-g7T"/>
+                                <exclude reference="DSe-d3-efm"/>
+                                <exclude reference="uW1-Gm-WE2"/>
+                                <exclude reference="Td1-YW-cT1"/>
+                                <exclude reference="mOi-4a-mba"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PGI-Tf-cDu"/>
+                                <include reference="mgj-qd-B9s"/>
+                                <include reference="9Qs-SS-g7T"/>
+                                <include reference="DSe-d3-efm"/>
+                                <include reference="uW1-Gm-WE2"/>
+                                <include reference="Td1-YW-cT1"/>
+                                <include reference="mOi-4a-mba"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="theMapView" destination="wJ5-gw-cFq" id="hDl-nY-INa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320.25"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="UOP-zq-MAP">
+            <objects>
+                <viewController id="1VA-KQ-qBQ" customClass="MenuViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QUe-oo-eXC"/>
+                        <viewControllerLayoutGuide type="bottom" id="CfT-HX-QIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5in-mg-pDP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyQ-V0-dxa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Google-Maps-Logo-PNG.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="154" y="60" width="62" height="51"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backToMap:" destination="1VA-KQ-qBQ" eventType="touchUpInside" id="jfp-Dg-BmY"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ak3-AZ-b1h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="159" width="400" height="592"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="1VA-KQ-qBQ" id="GdO-kh-FoI"/>
+                                    <outlet property="delegate" destination="1VA-KQ-qBQ" id="zRQ-PP-2My"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XyQ-V0-dxa"/>
+                                <exclude reference="ak3-AZ-b1h"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XyQ-V0-dxa"/>
+                                <include reference="ak3-AZ-b1h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ak3-AZ-b1h" id="sS0-At-4nd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbT-7x-vEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.5" y="-320.25"/>
+        </scene>
+        <!--Add Drop-->
+        <scene sceneID="78H-lF-IYF">
+            <objects>
+                <viewController id="xEA-14-94B" customClass="AddDropViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zkB-44-lj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJq-ht-FDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CgT-cJ-WrI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Sf-yE-dxq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="263"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="175"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-100" y="66" width="600" height="219"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="1vu-MN-fBu"/>
+                                </connections>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOz-8L-ySy">
+                                <rect key="frame" x="0.0" y="263" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="301" width="400" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="285" width="400" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addressTestFieldEditingDidEnd:" destination="xEA-14-94B" eventType="editingDidEnd" id="l1f-2a-dxI"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Location:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11g-9n-Ev7">
+                                <rect key="frame" x="-1" y="292" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="331" width="400" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="314" width="400" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nameOfLocationTestFieldEditingDidEnd:" destination="xEA-14-94B" eventType="editingDidEnd" id="T7P-RS-bp5"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GfJ-57-kyO">
+                                <rect key="frame" x="0.0" y="322" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="361" width="400" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="344" width="400" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nameOfPersonTestFieldEditingDidEnd:" destination="xEA-14-94B" eventType="editingDidEnd" id="gbK-zo-6X8"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocv-M5-9TK">
+                                <rect key="frame" x="241" y="360" width="57" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="399" width="57" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="382" width="57" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addDropSubmit:" destination="xEA-14-94B" eventType="touchUpInside" id="oQE-sd-PnT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Drop" image="second" id="OEE-oN-CVG"/>
+                    <connections>
+                        <outlet property="MAPVIEW" destination="5Sf-yE-dxq" id="IyT-y3-naQ"/>
+                        <outlet property="address" destination="cOz-8L-ySy" id="9Tq-IX-Suk"/>
+                        <outlet property="nameOfLocation" destination="11g-9n-Ev7" id="fyf-4X-M9a"/>
+                        <outlet property="nameOfPerson" destination="GfJ-57-kyO" id="myc-nj-iD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6s-c4-CzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="891.75"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="fQR-Yq-j4j">
+            <objects>
+                <viewController id="WfG-7H-rVq" customClass="AboutViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XsQ-VU-PFH"/>
+                        <viewControllerLayoutGuide type="bottom" id="RoT-aO-Lv1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KlL-2j-9Gm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqA-lH-lHV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Drop In is a shared resource program that helps you find, drink, and share water on the go.
+
+What's a drop?
+We define a drop as either a public drinking fountain or business partner such as a coffee shop or cafe where you can access free, clean, and local water.
+
+Feel welcomed in our community
+Our business partners expect you to Drop In at anytime during their business hours.
+
+How do I fill up?
+The majority of our partners have an easily accessible water container. If not, simply go up to the counter and say you’re a Drop In member.
+
+Forgot your bottle?
+No worries. In most cases, our local business partners leave out cups for our Drop In members.
+
+Unable to find water near you?
+Increase water access in your community by adding drinking fountains to our map with the "Add Drop" feature.
+
+Learn more about how you can join the movement at becausewater.org</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="55" y="130" width="268" height="319"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nff-AG-z14">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Privacy Policy"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <rect key="frame" x="116" y="92" width="169" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="wo6-M7-Qp3" kind="show" id="f5E-di-nr9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dqA-lH-lHV"/>
+                                <exclude reference="Nff-AG-z14"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dqA-lH-lHV"/>
+                                <include reference="Nff-AG-z14"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="first" id="FAW-RG-x0b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3e-mT-HLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-886.5" y="1515.75"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="9Qr-36-3fE">
+            <objects>
+                <viewController id="wo6-M7-Qp3" customClass="PrivacyPolicyViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5sa-r4-6hB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6fV-p8-VW4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LGe-zp-ku8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-Zo-xGu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="92" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="BackToAbout:" destination="wo6-M7-Qp3" eventType="touchUpInside" id="pXt-LT-cQl"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-js-MZ9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Drop In PRIVACY POLICY
+
+This privacy policy governs your use of the software application Drop In (“Application”) for mobile devices that was created by BeCause Water Benefit Corp. The Application is a community-driven geomapping app that helps people find, drink, and share water.
+
+What information does the Application obtain and how is it used?
+
+User Provided Information
+The Application obtains the information you provide when you download and register the Application. Registration with us is optional. However, please keep in mind that you may not be able to use some of the features offered by the Application unless you register with us.
+
+When you register with us and use the Application, you generally provide (a) your name, email address, age, username, password and other registration information; (b) transaction-related information, such as when you make purchases, respond to any offers, or download or use applications from us; (c) information you provide us when you contact us for help; (d) credit card information for purchase and use of the Application, and; (e) information you enter into our system when using the Application, such as contact information and project management information.
+
+We may also use the information you provided us to contact your from time to time to provide you with important information, required notices and marketing promotions.
+
+Automatically Collected Information
+In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the Application.
+
+Does the Application collect precise real time location information of the device?
+When you visit the mobile application, we may use GPS technology (or other similar technology) to determine your current location in order to determine the city you are located within and display a location map with relevant advertisements. We will not share your current location with other users or partners.
+
+If you do not want us to use your location for the purposes set forth above, you should turn off the location services for the mobile application located in your account settings or in your mobile phone settings and/or within the mobile application.
+
+Do third parties see and/or have access to information obtained by the Application?
+Yes. We will share your information with third parties only in the ways that are described in this privacy statement.
+
+We may disclose User Provided and Automatically Collected Information:
+
+as required by law, such as to comply with a subpoena, or similar legal process;
+when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
+with our trusted services providers who work on our behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.
+if BeCause Water Benefit Corp is involved in a merger, acquisition, or sale of all or a portion of its assets, you will be notified via email and/or a prominent notice on our Web site of any change in ownership or uses of this information, as well as any choices you may have regarding this information.
+What are my opt-out rights?
+You can stop all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network. You can also request to opt-out via email, at info@becausewater.com.
+
+Data Retention Policy, Managing Your Information
+We will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. We will retain Automatically Collected information for up to 24 months and thereafter may store it in aggregate. If you’d like us to delete User Provided Data that you have provided via the Application, please contact us at info@becausewater.com and we will respond in a reasonable time. Please note that some or all of the User Provided Data may be required in order for the Application to function properly.
+
+Children
+We do not use the Application to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at info@becausewater.com. We will delete such information from our files within a reasonable time.
+
+Security
+We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve our Application. Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.
+
+Changes
+This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy on this page and informing you via mobile app and/or email. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+
+Your Consent
+By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing,” means using cookies on a computer/hand-held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information, all of which activities will take place in the United States. If you reside outside the United States your information will be transferred, processed and stored there under United States privacy standards.
+
+Contact us
+If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at info@becausewater.com</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="138" width="241" height="368"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iZu-Zo-xGu"/>
+                                <exclude reference="tg9-js-MZ9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iZu-Zo-xGu"/>
+                                <include reference="tg9-js-MZ9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pHb-lH-43L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187.5" y="1685.25"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="BHK-Aa-Vbc">
+            <objects>
+                <viewController id="qhS-Rv-qA9" customClass="ConnectViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QVI-nd-9QI"/>
+                        <viewControllerLayoutGuide type="bottom" id="JJJ-w1-eFJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ohq-D9-tMd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pie-At-4xd">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="103" y="203" width="199" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="emailEditingDidEnd:" destination="qhS-Rv-qA9" eventType="editingDidEnd" id="EXG-V2-oK0"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-Dl-esb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="307" width="49" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="submitEmail:" destination="qhS-Rv-qA9" eventType="touchUpInside" id="frq-fq-PyG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYN-9q-ijN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Facebook_Logo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="142" width="50" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="openFacebook:" destination="qhS-Rv-qA9" eventType="touchUpInside" id="Xd3-Id-WNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCN-Vz-rTf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="pinterest-app-icon-logo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="117" y="136" width="53" height="57"/>
+                                </variation>
+                                <connections>
+                                    <action selector="openPinterest:" destination="qhS-Rv-qA9" eventType="touchUpInside" id="67G-wQ-uDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTR-cD-PuY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="c312412fb10805ffac87f242625de1c5.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="203" y="135" width="55" height="53"/>
+                                </variation>
+                                <connections>
+                                    <action selector="openTwitter:" destination="qhS-Rv-qA9" eventType="touchUpInside" id="3f9-Ii-Qcu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Pie-At-4xd"/>
+                                <exclude reference="ZCJ-Dl-esb"/>
+                                <exclude reference="LYN-9q-ijN"/>
+                                <exclude reference="JCN-Vz-rTf"/>
+                                <exclude reference="cTR-cD-PuY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Pie-At-4xd"/>
+                                <include reference="ZCJ-Dl-esb"/>
+                                <include reference="LYN-9q-ijN"/>
+                                <include reference="JCN-Vz-rTf"/>
+                                <include reference="cTR-cD-PuY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Connect" image="first" id="ESp-mi-bHy"/>
+                    <connections>
+                        <outlet property="email" destination="Pie-At-4xd" id="2cJ-AX-HtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyz-bN-zSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502.5" y="1098.75"/>
+        </scene>
+        <!--Bottle-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="BottleViewController" customModule="Drop_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npw-cL-PVL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Buy Our Gear!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="146" width="178" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="openWeb:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Vfv-re-Hbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Npw-cL-PVL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Npw-cL-PVL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bottle" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="xEA-14-94B" kind="relationship" relationship="viewControllers" id="NvH-sZ-3af"/>
+                        <segue destination="qhS-Rv-qA9" kind="relationship" relationship="viewControllers" id="eQz-XV-14B"/>
+                        <segue destination="WfG-7H-rVq" kind="relationship" relationship="viewControllers" id="aNa-rk-Ecc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook_Logo.png" width="480" height="480"/>
+        <image name="Google-Maps-Logo-PNG.png" width="256" height="256"/>
+        <image name="bubbler.png" width="44" height="44"/>
+        <image name="c312412fb10805ffac87f242625de1c5.jpg" width="250" height="250"/>
+        <image name="drop-in.png" width="44" height="44"/>
+        <image name="first" width="30" height="30"/>
+        <image name="listmenu.png" width="179" height="179"/>
+        <image name="pinterest-app-icon-logo" width="384" height="378"/>
+        <image name="second" width="30" height="30"/>
+        <image name="users_addDrop.png" width="28" height="28"/>
+    </resources>
+</document>

@@ -6,7 +6,9 @@ The CS460 folder contains the PHP code that sort of runs like a mini-version of 
 
 The Presentation2.html file is python code which uses several different python libraries to give a glimpse of what the student data contains.
 
-The Drop In 2 folder contains an x-code project that uses Apple Maps.  This project shows users different points on a map in which they can get access to clean and accessible drinking water.  Users can also add their own points. Since the project uses podifles, one must use the command line open "Drop In".xworkspace to open it.  More information can be found here https://cocoapods.org/ . Also, if someone wants to run the project in the simulator, set the default location to these coordinates, Latitude:42.352286 and Longitude:-71.115948, for the best example of how the app works.  
+The Drop In 2 (Drop In) folder contains an x-code project that uses Apple Maps.  This project shows users different points on a map in which they can get access to clean and accessible drinking water.  Users can also add their own points. Since the project uses podifles, one must use the command line open "Drop In".xworkspace to open it.  More information can be found here https://cocoapods.org/ . Also, if someone wants to run the project in the simulator, set the default location to these coordinates, Latitude:42.352286 and Longitude:-71.115948, for the best example of how the app works. 
+
+-ask if want actual copy 
 
 The PeopleMakingADifference folder contains an x-code application that uses the Parse API.  The app allows a user to check in and check out of an event.  This way a user can see what their task is for the day and the admin can see how many hours someone is volunteering.  Users can also receive push notifications.  Login credentials to test the app are yolo@gmail.com (email) and 12DFGE45 (Room Code).  
 

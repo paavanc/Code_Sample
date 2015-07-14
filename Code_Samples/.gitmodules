@@ -1,0 +1,6 @@
+[submodule "SwiftyJSON"]
+	path = SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON
+[submodule "SwiftHTTP"]
+	path = SwiftHTTP
+	url = https://github.com/daltoniam/SwiftHTTP

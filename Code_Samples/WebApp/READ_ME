@@ -1,0 +1,11 @@
+
+
+Here is breakup of all the files.  The Data_Processing folder contains csv files and a ipython_notebook file, saved as an html, in order to show how I had to preprocess data to get the top 100 populated cities in the US in alphbetical order.  I didn't feel like typing every city out, so this seemed the best way to go.
+
+The mysite directory houses all the code following a typical django format.  Signup.hmtl is the main page and confirmation.html is the success page.
+
+I also use my gmail smtp server to send emails as my machine won't let me send emails otherwise.
+
+Let me know if you have any other questions.
+
+Also I use the average farenheight and probability of percipitation to send the subject line.  It seemed like the least tedious way.

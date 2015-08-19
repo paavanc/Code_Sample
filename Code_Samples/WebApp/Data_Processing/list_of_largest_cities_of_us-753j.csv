@@ -1,0 +1,576 @@
+2012 rank,City,State,2012 estimate,2010 Census
+1,New York,New York,"8,336,697","8,175,133"
+,,,,
+2,Los Angeles,California,"3,857,799","3,792,621"
+,,,,
+3,Chicago,Illinois,"2,714,856","2,695,598"
+,,,,
+4,Houston,Texas,"2,160,821","2,100,263"
+,,,,
+5,Philadelphia,Pennsylvania,"1,547,607","1,526,006"
+,,,,
+6,Phoenix,Arizona,"1,488,750","1,445,632"
+,,,,
+7,San Antonio,Texas,"1,382,951","1,327,407"
+,,,,
+8,San Diego,California,"1,338,348","1,307,402"
+,,,,
+9,Dallas,Texas,"1,241,162","1,197,816"
+,,,,
+10,San Jose,California,"982,765","945,942"
+,,,,
+11,Austin,Texas,"842,592","790,390"
+,,,,
+12,Jacksonville,Florida,"836,507","821,784"
+,,,,
+13,Indianapolis,Indiana,"834,852","820,445"
+,,,,
+14,San Francisco,California,"825,863","805,235"
+,,,,
+15,Columbus,Ohio,"809,798","787,033"
+,,,,
+16,Fort Worth,Texas,"777,992","741,206"
+,,,,
+17,Charlotte,North Carolina,"775,202","731,424"
+,,,,
+18,Detroit,Michigan,"701,475","713,777"
+,,,,
+19,El Paso,Texas,"672,538","649,121"
+,,,,
+20,Memphis,Tennessee,"655,155","646,889"
+,,,,
+21,Boston,Massachusetts,"636,479","617,594"
+,,,,
+22,Seattle,Washington,"634,535","608,660"
+,,,,
+23,Denver,Colorado,"634,265","600,158"
+,,,,
+24,Washington,District of Columbia,"632,323","601,723"
+,,,,
+25,Nashville,Tennessee,"624,496","601,222"
+,,,,
+26,Baltimore,Maryland,"621,342","620,961"
+,,,,
+27,Louisville,Kentucky,"605,110","597,337"
+,,,,
+28,Portland,Oregon,"603,106","583,776"
+,,,,
+29,Oklahoma,Oklahoma,"599,199","579,999"
+,,,,
+30,Milwaukee,Wisconsin,"598,916","594,833"
+,,,,
+31,Las Vagas,Nevada,"596,424","583,756"
+,,,,
+32,Albuquerque,New Mexico,"555,417","545,852"
+,,,,
+33,Tucson,Arizona,"524,295","520,116"
+,,,,
+34,Fresno,California,"505,882","494,665"
+,,,,
+35,Sacramento,California,"475,516","466,488"
+,,,,
+36,Long Beach,California,"467,892","462,257"
+,,,,
+37,Kansas City,Missouri,"464,310","459,787"
+,,,,
+38,Mesa,Arizona,"452,084","439,041"
+,,,,
+39,Virginia Beach,Virginia,"447,021","437,994"
+,,,,
+40,Atlanta,Georgia,"443,775","420,003"
+,,,,
+41,Colorado Springs,Colorado,"431,834","416,427"
+,,,,
+42,Raleigh,North Carolina,"423,179","403,892"
+,,,,
+43,Omaha,Nebraska,"421,570","408,958"
+,,,,
+44,Miami,Florida,"413,892","399,457"
+,,,,
+45,Oakland,California,"400,740","390,724"
+,,,,
+46,Tulsa,Oklahoma,"393,987","391,906"
+,,,,
+47,Omaha,Minnesota,"392,880","382,578"
+,,,,
+48,Cleveland,Ohio,"390,928","396,815"
+,,,,
+49,Omaha,Kansas,"385,577","382,368"
+,,,,
+50,Arlington,Texas,"375,600","365,438"
+,,,,
+51,Omaha,Louisiana,"369,250","343,829"
+,,,,
+52,Bakersfield,California,"358,597","347,483"
+,,,,
+53,Tampa,Florida,"347,645","335,709"
+,,,,
+54,Honolulu,Hawaii,"345,610","337,256"
+,,,,
+55,Anaheim,California,"343,248","336,265"
+,,,,
+56,Aurora,Colorado,"339,030","325,078"
+,,,,
+57,Santa Ana,California,"330,920","324,528"
+,,,,
+58,St. Louis,Missouri,"318,172","319,294"
+,,,,
+59,Riverside,California,"313,673","303,871"
+,,,,
+60,Corpus Christi,Texas,"312,195","305,215"
+,,,,
+61,Pittsburgh,Pennsylvania,"306,211","305,704"
+,,,,
+62,Lexington,Kentucky,"310,573","295,803"
+,,,,
+63,Anchorage,Alaska,"298,610","291,826"
+,,,,
+64,Stockton,California,"297,984","291,707"
+,,,,
+65,Cincinnati,Ohio,"296,550","296,943"
+,,,,
+66,Saint Paul,Minnesota,"290,770","285,068"
+,,,,
+67,Toledo,Ohio,"284,012","287,208"
+,,,,
+68,Newark,New Jersey,"277,727","277,140"
+,,,,
+69,Greensboro,North Carolina,"277,080","269,666"
+,,,,
+70,Plano,Texas,"272,068","259,841"
+,,,,
+71,Henderson,Nevada,"265,679","257,729"
+,,,,
+72,Lincoln,Nebraska,"265,404","258,379"
+,,,,
+73,Buffalo,New York,"259,384","261,310"
+,,,,
+74,Fort Wayne,Indiana,"254,555","253,691"
+,,,,
+75,Jersey City,New Jersey,"254,441","247,597"
+,,,,
+76,Chula Vista,California,"252,422","243,916"
+,,,,
+77,Orlando,Florida,"249,562","238,300"
+,,,,
+78,St. Petersburg,Florida,"246,541","244,769"
+,,,,
+79,Norfolk,Virginia,"245,782","242,803"
+,,,,
+80,Chandler,Arizona,"245,628","236,123"
+,,,,
+81,Laredo,Texas,"244,731","236,091"
+,,,,
+82,Madison,Wisconsin,"240,323","233,209"
+,,,,
+83,Durham,North Carolina,"239,358","228,330"
+,,,,
+84,Lubbock,Texas,"236,065","229,573"
+,,,,
+85,Winston Salem,North Carolina,"234,349","229,617"
+,,,,
+86,Garland,Texas,"233,564","226,876"
+,,,,
+87,Glendale,Arizona,"232,143","226,721"
+,,,,
+88,Hialeah,Florida,"231,941","224,669"
+,,,,
+89,Reno,Nevada,"231,027","225,221"
+,,,,
+90,Baton Rouge,Louisiana,"230,058","229,493"
+,,,,
+91,Irvine,California,"229,985","212,375"
+,,,,
+92,Chesapeake,Virginia,"228,417","222,209"
+,,,,
+93,Irving,Texas,"225,427","216,290"
+,,,,
+94,Scottsdale,Arizona,"223,514","217,385"
+,,,,
+95,North Las Vegas,Nevada,"223,491","216,961"
+,,,,
+96,Fremont,California,"221,986","214,089"
+,,,,
+97,Gilbert,Arizona,"221,140","208,453"
+,,,,
+98,San Bernardino,California,"213,295","209,924"
+,,,,
+99,Boise,Idaho,"212,303","205,671"
+,,,,
+100,Birmingham,Alabama,"212,038","212,237"
+,,,,
+101,Rochester,New York,"210,532","210,565"
+,,,,
+102,Richmond,Virginia,"210,309","204,214"
+,,,,
+103,Spokane,Washington,"209,525","208,916"
+,,,,
+104,Des Moines,Iowa,"206,688","203,433"
+,,,,
+105,Montgomery,Alabama,"205,293","205,764"
+,,,,
+106,Modesto,California,"203,547","201,165"
+,,,,
+107,Fayetteville,North Carolina,"202,103","200,564"
+,,,,
+108,Tacoma,Washington,"202,010","198,397"
+,,,,
+109,Shreveport,Louisiana,"201,867","199,311"
+,,,,
+110,Fontana,California,"201,812","196,069"
+,,,,
+111,Oxnard,California,"201,555","197,899"
+,,,,
+112,Aurora,Illinois,"199,932","197,899"
+,,,,
+113,Moreno Valley,California,"199,552","193,365"
+,,,,
+114,Akron,Ohio,"198,549","199,110"
+,,,,
+115,Yonkers,New York,"198,449","195,976"
+,,,,
+116,Columbus,Georgia,"198,413","189,885"
+,,,,
+117,Augusta,Georgia,"197,872","195,844"
+,,,,
+118,Little Rock,Arkansas,"196,537","193,524"
+,,,,
+119,Amarillo,Texas,"195,250","190,695"
+,,,,
+120,Mobile,Alabama,"194,822","195,111"
+,,,,
+121,Huntington Beach,California,"194,708","189,992"
+,,,,
+122,Glendale,California,"194,478","191,719"
+,,,,
+123,Grand Rapids,Michigan,"190,411","188,040"
+,,,,
+124,Salt Lake City,Utah,"189,314","186,440"
+,,,,
+125,Tallahassee,Florida,"186,971","181,376"
+,,,,
+126,Huntsville,Alabama,"183,739","180,105"
+,,,,
+127,Worcester,Massachusetts,"182,669","181,045"
+,,,,
+128,Knoxville,Tennessee,"182,200","178,874"
+,,,,
+129,Grand Prairie,Texas,"181,824","175,396"
+,,,,
+130,Newport News,Virginia,"180,726","180,719"
+,,,,
+131,Brownsville,Texas,"180,097","175,023"
+,,,,
+132,Santa Clarita,California,"179,013","176,320"
+,,,,
+133,Overland Park,Kansas,"178,919","173,372"
+,,,,
+134,Providence,Rhode Island,"178,432","178,042"
+,,,,
+135,Jackson,Mississippi,"175,437","173,514"
+,,,,
+136,Garden Grove,California,"174,389","170,883"
+,,,,
+137,Oceanside,California,"171,293","167,086"
+,,,,
+138,Chattanooga,Tennessee,"171,279","167,674"
+,,,,
+139,Fort Lauderdale,Florida,"170,747","165,521"
+,,,,
+140,Rancho Cucamonga,California,"170,746","165,269"
+,,,,
+141,Santa Rosa,California,"170,685","167,815"
+,,,,
+142,Port St. Lucie,Florida,"168,716","164,603"
+,,,,
+143,Ontario,California,"167,211","163,924"
+,,,,
+144,Tempe,Arizona,"166,842","161,719"
+,,,,
+145,Vancouver,Washington,"165,489","161,791"
+,,,,
+146,Springfield,Missouri,"162,191","159,498"
+,,,,
+147,Cape Coral,Florida,"161,248","154,305"
+,,,,
+148,Pembroke Pines,Florida,"160,306","154,019"
+,,,,
+149,Sioux Falls,South Dakota,"159,908","153,888"
+,,,,
+150,Peoria,Arizona,"159,789","154,065"
+,,,,
+151,Lancaster,California,"159,055","156,633"
+,,,,
+152,Elk Grove,California,"159,038","153,015"
+,,,,
+153,Corona,California,"158,391","152,374"
+,,,,
+154,Eugene,Oregon,"157,986","156,185"
+,,,,
+155,Salem,Oregon,"157,429","154,637"
+,,,,
+156,Palmdale,California,"155,650","152,750"
+,,,,
+157,Salinas,California,"154,484","150,441"
+,,,,
+158,Springfield,Massachusetts,"153,552","153,060"
+,,,,
+159,Pasadena,Texas,"152,272","149,043"
+,,,,
+160,Rockford,Illinois,"150,843","152,871"
+,,,,
+161,Pomona,California,"150,812","149,058"
+,,,,
+162,Hayward,California,"149,392","144,186"
+,,,,
+163,Fort Collins,Colorado,"148,612","143,986"
+,,,,
+164,Joliet,Illinois,"148,268","147,433"
+,,,,
+165,Escondido,California,"147,575","143,911"
+,,,,
+166,Kansas City,Kansas,"147,268","145,786"
+,,,,
+167,Torrance,California,"147,027","145,438"
+,,,,
+168,Bridgeport,Connecticut,"146,425","144,229"
+,,,,
+169,Alexandria,Virginia,"146,294","139,966"
+,,,,
+170,Sunnyvale,California,"146,197","140,081"
+,,,,
+171,Cary,North Carolina,"145,693","135,234"
+,,,,
+172,Lakewood,Colorado,"145,516","142,980"
+,,,,
+173,Hollywood,Florida,"145,236","140,768"
+,,,,
+174,Paterson,New Jersey,"145,219","146,199"
+,,,,
+175,Syracuse,New York,"144,170","145,170"
+,,,,
+176,Naperville,Illinois,"143,684","141,853"
+,,,,
+177,McKinney,Texas,"143,223","131,117"
+,,,,
+178,Mesquite,Texas,"143,195","139,824"
+,,,,
+179,Clarksville,Tennessee,"142,519","132,929"
+,,,,
+180,Savannah,Georgia,"142,022","136,286"
+,,,,
+181,Dayton,Ohio,"141,359","141,527"
+,,,,
+182,Orange,California,"139,419","136,416"
+,,,,
+183,Fullerton,California,"138,574","135,161"
+,,,,
+184,Pasadena,California,"138,547","137,122"
+,,,,
+185,Hampton,Virginia,"136,836","137,436"
+,,,,
+186,McAllen,Texas,"134,719","129,877"
+,,,,
+187,Killeen,Texas,"134,654","127,921"
+,,,,
+188,Warren,Michigan,"134,141","134,056"
+,,,,
+189,West Valley City,Utah,"132,434","129,480"
+,,,,
+190,Columbia,South Carolina,"131,686","129,272"
+,,,,
+191,New Haven,Connecticut,"130,741","129,779"
+,,,,
+192,Sterling Heights,Michigan,"130,410","129,699"
+,,,,
+193,Olathe,Kansas,"130,045","125,872"
+,,,,
+194,Miramar,Florida,"128,729","122,041"
+,,,,
+195,Thousand Oaks,California,"128,412","126,683"
+,,,,
+196,Frisco,Texas,"128,176","116,989"
+,,,,
+197,Cedar Rapids,Iowa,"128,119","126,326"
+,,,,
+198,Topeka,Kansas,"127,939","127,473"
+,,,,
+199,Visalia,California,"127,081","124,442"
+,,,,
+200,Waco,Texas,"127,018","124,805"
+,,,,
+201,Elizabeth,New Jersey,"126,458","124,969"
+,,,,
+202,Bellevue,Washington,"126,439","122,363"
+,,,,
+203,Gainesville,Florida,"126,047","124,354"
+,,,,
+204,Simi Valley,California,"125,793","124,237"
+,,,,
+205,Charleston,South Carolina,"125,583","120,083"
+,,,,
+206,Carrollton,Texas,"125,409","119,097"
+,,,,
+207,Coral Springs,Florida,"125,287","121,096"
+,,,,
+208,Stamford,Connecticut,"125,109","122,643"
+,,,,
+209,Hartford,Connecticut,"124,893","124,775"
+,,,,
+210,Concord,California,"124,711","122,067"
+,,,,
+211,Roseville,California,"124,519","118,788"
+,,,,
+212,Thornton,Colorado,"124,140","118,772"
+,,,,
+213,Kent,Washington,"122,999","92,411"
+,,,,
+214,Lafayette,Louisiana,"122,761","120,623"
+,,,,
+215,Surprise,Arizona,"121,287","117,517"
+,,,,
+216,Denton,Texas,"121,123","113,383"
+,,,,
+217,Victorville,California,"120,336","115,903"
+,,,,
+218,Evansville,Indiana,"120,235","117,429"
+,,,,
+219,Midland,Texas,"119,385","111,147"
+,,,,
+220,Santa Clara,California,"119,311","116,468"
+,,,,
+221,Athens,Georgia,"118,999","115,452"
+,,,,
+222,Allentown,Pennsylvania,"118,974","118,032"
+,,,,
+223,Abilene,Texas,"118,887","117,063"
+,,,,
+224,Beaumont,Texas,"118,228","118,296"
+,,,,
+225,Vallejo,California,"117,796","115,942"
+,,,,
+226,Independence,Missouri,"117,270","116,830"
+,,,,
+227,Springfield,Illinois,"117,126","116,250"
+,,,,
+228,Ann Arbor,Michigan,"116,121","113,934"
+,,,,
+229,Provo,Utah,"115,919","112,488"
+,,,,
+230,Peoria,Illinois,"115,687","115,007"
+,,,,
+231,Norman,Oklahoma,"115,562","110,925"
+,,,,
+232,Berkeley,California,"115,403","112,580"
+,,,,
+233,El Monte,California,"115,111","113,475"
+,,,,
+234,Murfreesboro,Tennessee,"114,038","108,755"
+,,,,
+235,Lansing,Michigan,"113,996","114,297"
+,,,,
+236,Columbia,Missouri,"113,225","108,500"
+,,,,
+237,Downey,California,"112,873","111,772"
+,,,,
+238,Costa Mesa,California,"111,918","109,960"
+,,,,
+239,Inglewood,California,"111,182","109,673"
+,,,,
+240,Miami Gardens,Florida,"110,754","107,167"
+,,,,
+241,,New Hampshire,"110,209","109,565"
+,,,,
+242,Elgin,Illinois,"109,927","108,188"
+,,,,
+243,Wilmington,North Carolina,"109,922","106,476"
+,,,,
+244,Waterbury,Connecticut,"109,915","110,366"
+,,,,
+245,Fargo,North Dakota,"109,779","105,549"
+,,,,
+246,Arvada,Colorado,"109,745","106,433"
+,,,,
+247,Carlsbad,California,"109,318","105,328"
+,,,,
+248,Westminster,Colorado,"109,169","106,114"
+,,,,
+249,Rochester,Minnesota,"108,992","106,769"
+,,,,
+250,Gresham,Oregon,"108,956","105,594"
+,,,,
+251,Clearwater,Florida,"108,732","107,685"
+,,,,
+252,Lowell,Massachusetts,"108,522","106,519"
+,,,,
+253,West Jordan,Utah,"108,383","103,712"
+,,,,
+254,Pueblo,Colorado,"107,772","106,595"
+,,,,
+255,San Buenaventura (Ventura),California,"107,734","106,433"
+,,,,
+256,Fairfield,California,"107,684","105,321"
+,,,,
+257,West Covina,California,"107,440","106,098"
+,,,,
+258,Billings,Montana,"106,954","104,170"
+,,,,
+259,Murrieta,California,"106,810","103,466"
+,,,,
+260,High Point,North Carolina,"106,586","104,371"
+,,,,
+261,Round Rock,Texas,"106,573","99,887"
+,,,,
+262,Richmond,California,"106,516","103,701"
+,,,,
+263,Cambridge,Massachusetts,"106,471","105,162"
+,,,,
+264,Norwalk,California,"106,278","105,549"
+,,,,
+265,Odessa,Texas,"106,102","99,940"
+,,,,
+266,Antioch,California,"105,508","102,372"
+,,,,
+267,Temecula,California,"105,208","100,097"
+,,,,
+268,Green Bay,Wisconsin,"104,868","104,057"
+,,,,
+269,Everett,Washington,"104,655","103,019"
+,,,,
+270,Wichita Falls,Texas,"104,552","104,553"
+,,,,
+271,Burbank,California,"104,391","103,340"
+,,,,
+272,Palm Bay,Florida,"104,124","103,190"
+,,,,
+273,Centennial,Colorado,"103,743","100,377"
+,,,,
+274,Daly City,California,"103,690","101,123"
+,,,,
+275,Richardson,Texas,"103,297","99,223"
+,,,,
+276,Pompano Beach,Florida,"102,984","99,845"
+,,,,
+277,Broken Arrow,Oklahoma,"102,019","98,850"
+,,,,
+278,North Charleston,South Carolina,"101,989","97,471"
+279,West Palm Beach,Florida,"101,903","99,919"
+,,,,
+280,Boulder,Colorado,"101,808","97,385"
+281,Rialto,California,"101,740","99,171"
+,,,,
+282,Santa Maria,California,"101,459","99,553"
+,,,,
+283,El Cajon,California,"101,435","99,478"
+,,,,
+284,Davenport,Iowa,"101,363","99,685"
+,,,,
+285,Erie,Pennsylvania,"101,047","101,786"
+,,,,
+286,Las Cruces,New Mexico,"101,047","97,618"
+,,,,
+287,South Bend,Indiana,"100,800","101,168"
+,,,,
+288,Flint,Michigan,"100,515","102,434"
+,,,,
+289,Kenosha,Wisconsin,"100,150","99,218"

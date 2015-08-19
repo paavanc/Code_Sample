@@ -13,3 +13,8 @@ The Drop In 2 (Drop In) folder contains an x-code project that uses Apple Maps. 
 The PeopleMakingADifference folder contains an x-code application that uses the Parse API.  The app allows a user to check in and check out of an event.  This way a user can see what their task is for the day and the admin can see how many hours someone is volunteering.  Users can also receive push notifications.  Login credentials to test the app are yolo@gmail.com (email) and 12DFGE45 (Room Code).  
 
 The best version of xcode to test these apps is 6.1.1.  
+
+
+The WebApp:
+
+This project is a basic web application that lets users add their emails and receive email notifications based on the weather in their specified city.  The main files to check out in this project are WebApp/mysite/weather/views.py and WebApp/mysite/script.py.  One file is the basic logic for adding a user and the other is a script that calls a weather api and sends emails.

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+   <head>
+<!-- Styling for form-->
+      <style>
+         #box {
+         background-color: white;
+         margin: auto;
+         width: 600px;
+         height: 300px;
+         padding: 5px;
+         border: 1px solid black;
+         margin: 25px;
+         margin-left: auto ;
+         margin-right: auto ;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         font-family:Helvetica;
+         }
+      </style>
+   </head>
+   <body>
+   <!-- Form-->
+      <div id  = "box">
+         Weather Powered Email
+         <hr>
+         <br>
+         <div id ="content">
+            <center>
+               <form action="/weather/" method="post">
+                  <!--Hide the security token-->
+                  <p style="display:none"> {% csrf_token %}
+                  </p>
+                  <br> <br>
+                  Email Address:
+                  <br>
+                  <input type="text" id  ="emailAddress" placeholder="Email Address" name="emailAddress">
+                  <br>
+                  <br>
+                  Location:
+                  <br>
+                  <select id = "location" name = "location" >
+                     <option value="" disabled selected>Where do you live?</option>
+                     <script language="javascript" type="text/javascript"> 
+                     //Arrays for cities and states -one city array for display...one for database
+                        var city = ['Albuquerque',
+                        'Anaheim',
+                        'Anchorage',
+                        'Arlington',
+                        'Atlanta',
+                        'Aurora',
+                        'Austin',
+                        'Bakersfield',
+                        'Baltimore',
+                        'Baton Rouge',
+                        'Birmingham',
+                        'Boise',
+                        'Boston',
+                        'Buffalo',
+                        'Chandler',
+                        'Charlotte',
+                        'Chesapeake',
+                        'Chicago',
+                        'Chula Vista',
+                        'Cincinnati',
+                        'Cleveland',
+                        'Colorado Springs',
+                        'Columbus',
+                        'Corpus Christi',
+                        'Dallas',
+                        'Denver',
+                        'Detroit',
+                        'Durham',
+                        'El Paso',
+                        'Fort Wayne',
+                        'Fort Worth',
+                        'Fremont',
+                        'Fresno',
+                        'Garland',
+                        'Gilbert',
+                        'Glendale',
+                        'Greensboro',
+                        'Henderson',
+                        'Hialeah',
+                        'Honolulu',
+                        'Houston',
+                        'Indianapolis',
+                        'Irvine',
+                        'Irving',
+                        'Jacksonville',
+                        'Jersey City',
+                        'Kansas City',
+                        'Laredo',
+                        'Las Vagas',
+                        'Lexington',
+                        'Lincoln',
+                        'Long Beach',
+                        'Los Angeles',
+                        'Louisville',
+                        'Lubbock',
+                        'Madison',
+                        'Memphis',
+                        'Mesa',
+                        'Miami',
+                        'Milwaukee',
+                        'Nashville',
+                        'New York',
+                        'Newark',
+                        'Norfolk',
+                        'North Las Vegas',
+                        'Oakland',
+                        'Oklahoma',
+                        'Omaha',
+                        'Omaha',
+                        'Omaha',
+                        'Omaha',
+                        'Orlando',
+                        'Philadelphia',
+                        'Phoenix',
+                        'Pittsburgh',
+                        'Plano',
+                        'Portland',
+                        'Raleigh',
+                        'Reno',
+                        'Riverside',
+                        'Sacramento',
+                        'Saint Paul',
+                        'San Antonio',
+                        'San Bernardino',
+                        'San Diego',
+                        'San Francisco',
+                        'San Jose',
+                        'Santa Ana',
+                        'Scottsdale',
+                        'Seattle',
+                        'St. Louis',
+                        'St. Petersburg',
+                        'Stockton',
+                        'Tampa',
+                        'Toledo',
+                        'Tucson',
+                        'Tulsa',
+                        'Virginia Beach',
+                        'Washington',
+                        'Winston Salem'];
+                        
+                        var states = ['NM',
+                        'CA',
+                        'AK',
+                        'TX',
+                        'GA',
+                        'CO',
+                        'TX',
+                        'CA',
+                        'MD',
+                        'LA',
+                        'AL',
+                        'ID',
+                        'MA',
+                        'NY',
+                        'AZ',
+                        'NC',
+                        'VA',
+                        'IL',
+                        'CA',
+                        'OH',
+                        'OH',
+                        'CO',
+                        'OH',
+                        'TX',
+                        'TX',
+                        'CO',
+                        'MI',
+                        'NC',
+                        'TX',
+                        'IN',
+                        'TX',
+                        'CA',
+                        'CA',
+                        'TX',
+                        'AZ',
+                        'AZ',
+                        'NC',
+                        'NV',
+                        'FL',
+                        'HI',
+                        'TX',
+                        'IN',
+                        'CA',
+                        'TX',
+                        'FL',
+                        'NJ',
+                        'MO',
+                        'TX',
+                        'NV',
+                        'KY',
+                        'NE',
+                        'CA',
+                        'CA',
+                        'KY',
+                        'TX',
+                        'WI',
+                        'TN',
+                        'AZ',
+                        'FL',
+                        'WI',
+                        'TN',
+                        'NY',
+                        'NJ',
+                        'VA',
+                        'NV',
+                        'CA',
+                        'OK',
+                        'KS',
+                        'NE',
+                        'MN',
+                        'LA',
+                        'FL',
+                        'PA',
+                        'AZ',
+                        'PA',
+                        'TX',
+                        'OR',
+                        'NC',
+                        'NV',
+                        'CA',
+                        'CA',
+                        'MN',
+                        'TX',
+                        'CA',
+                        'CA',
+                        'CA',
+                        'CA',
+                        'CA',
+                        'AZ',
+                        'WA',
+                        'MO',
+                        'FL',
+                        'CA',
+                        'FL',
+                        'OH',
+                        'AZ',
+                        'OK',
+                        'VA',
+                        'DC',
+                        'NC'];
+                        
+                        var cityValue= ['Albuquerque',
+                        'Anaheim',
+                        'Anchorage',
+                        'Arlington',
+                        'Atlanta',
+                        'Aurora',
+                        'Austin',
+                        'Bakersfield',
+                        'Baltimore',
+                        'Baton_Rouge',
+                        'Birmingham',
+                        'Boise',
+                        'Boston',
+                        'Buffalo',
+                        'Chandler',
+                        'Charlotte',
+                        'Chesapeake',
+                        'Chicago',
+                        'Chula_Vista',
+                        'Cincinnati',
+                        'Cleveland',
+                        'Colorado_Springs',
+                        'Columbus',
+                        'Corpus_Christi',
+                        'Dallas',
+                        'Denver',
+                        'Detroit',
+                        'Durham',
+                        'El_Paso',
+                        'Fort_Wayne',
+                        'Fort_Worth',
+                        'Fremont',
+                        'Fresno',
+                        'Garland',
+                        'Gilbert',
+                        'Glendale',
+                        'Greensboro',
+                        'Henderson',
+                        'Hialeah',
+                        'Honolulu',
+                        'Houston',
+                        'Indianapolis',
+                        'Irvine',
+                        'Irving',
+                        'Jacksonville',
+                        'Jersey_City',
+                        'Kansas_City',
+                        'Laredo',
+                        'Las_Vagas',
+                        'Lexington',
+                        'Lincoln',
+                        'Long_Beach',
+                        'Los_Angeles',
+                        'Louisville',
+                        'Lubbock',
+                        'Madison',
+                        'Memphis',
+                        'Mesa',
+                        'Miami',
+                        'Milwaukee',
+                        'Nashville',
+                        'New_York',
+                        'Newark',
+                        'Norfolk',
+                        'North_Las_Vegas',
+                        'Oakland',
+                        'Oklahoma',
+                        'Omaha',
+                        'Omaha',
+                        'Omaha',
+                        'Omaha',
+                        'Orlando',
+                        'Philadelphia',
+                        'Phoenix',
+                        'Pittsburgh',
+                        'Plano',
+                        'Portland',
+                        'Raleigh',
+                        'Reno',
+                        'Riverside',
+                        'Sacramento',
+                        'Saint_Paul',
+                        'San_Antonio',
+                        'San_Bernardino',
+                        'San_Diego',
+                        'San_Francisco',
+                        'San_Jose',
+                        'Santa_Ana',
+                        'Scottsdale',
+                        'Seattle',
+                        'St._Louis',
+                        'St._Petersburg',
+                        'Stockton',
+                        'Tampa',
+                        'Toledo',
+                        'Tucson',
+                        'Tulsa',
+                        'Virginia_Beach',
+                        'Washington',
+                        'Winston_Salem'];
+                        //for loop to print options
+                        var value = ""
+                        
+                        for(var d=0;d<city.length;d++)
+                        {
+                        name = city[d] +", " + states[d]
+                        nameValue = cityValue[d] +" " + states[d]
+                        
+                        document.write("<option value='" + nameValue + "'>" + name + "</option>");
+                        
+                        }
+                        
+                     </script>
+                  </select>
+                  <br>
+                  <br>
+                  <input type="submit" value="Subscribe" />
+            </center>
+            </form>
+         </div>
+      </div>
+   </body >
+</html>

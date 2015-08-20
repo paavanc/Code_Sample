@@ -26,7 +26,7 @@ def getData():
 #gets the json data based on the city and the state
 def getJson(city, state):
 	#url for api call
-	url = 'http://api.wunderground.com/api/1c212994ead3fa01/forecast/q/'+state+'/'+city+'.json'
+	url = 'http://api.wunderground.com/api/N?A/forecast/q/'+state+'/'+city+'.json'
 	#get information
 	serialized_data = urllib2.urlopen(url).read()
         

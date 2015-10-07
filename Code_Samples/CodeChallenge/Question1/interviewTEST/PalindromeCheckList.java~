@@ -1,0 +1,5 @@
+
+
+public class PalindromeCheckList implements PalindromeChecker{
+  
+}

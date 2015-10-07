@@ -1,0 +1,30 @@
+    
+
+Summary: Notes and Thoughts
+
+Question 1:
+
+Since I wasted 2 hours trying to get intelliJ working on my mac, I figured it was best to just work with the java files directly.
+In doing so, I had to make some modifications to the files like commenting out some libraries and packages.  I also removed
+some catch try blocks to make my life easier.  We have four main java files in this directory, PalindomeChecker (interface), PalindromeCheckerTest(checks for time), PalindromeCheckList (implements the interface) and PalindromeSource (gives us our palindromes).  PalindromeCheckList and PalindromeCheckerTest use unit tests to see if the methods work.  The unit tests are in main methods.  I tried my best to figure out what Connor wanted for the design question.  But other than that, everything works.  I used DrJava to run all these files by the way.  You might have to fix the Path file in order for these files to run on your machine.  
+
+
+Question 2:
+
+Connect the dots ended up being more fun than I though it would be.  I used CoreAnimations to draw the custom buttons (circles) and used an UIImage to draw the lines in between them.  I was still in the process of figuring out how to refactor my code so that I would hit all  5 dots using one motion.  I'm using the touchbegin and touchend methods in order to do this.  The halfway refactored code can be found in the ConnectTheDots directory.  I draw my buttons in my viewdidload function.  The buttons calls a pressed function, which then calls a draw function to draw a line between the first and last pressed circle.  The button method also updates a temp array to let us know what circles have been hit and in what order.  At the end of the touchend method, a checker function is called to check the temp array versus the correct array.  This doesn't work yet, but thats where I was heading.
+
+The code that works completely is in the Con5 directory.  The code is verys similar but doesnt use the touch class.  We draw the buttons in the viewdidload, have a button pressed function and a draw function.  The button pressed function does all the checking to see if all the buttons have been hit in the right order.  I use a counter and prev variable to make sure no duplicates are placed in our temp array.  You connect the dots by clicking on them.  If you click the wrong order, the board resets.
+
+Question 3
+
+The maze is drawn using asscii characters.  I use an algorthim to fill up a grid and then a display function to print ascii characters based on the grids values.  I was trying to implement a draw function for this instead, so the maze would like nicer.
+I would divide the UIImage view into how many columns and rows I needed.  So instead of printing ascii characters, I would draw a line or create a space from one spot on the view to another.  I would use a spacer variable to make sure each line was equally drawn and incremented from one col/row to the next.  The current display function builds the maze through a string and prints it out as a label.  Not the most elegant solution but it works.  I was pressed for time.
+
+
+Final Thoughts:
+
+I had fun these past 24 hours.  I learned some things and hope I can be a part of your team.
+
+Thanks,
+
+Paavan Chopra

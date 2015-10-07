@@ -1,0 +1,107 @@
+import org.junit.Before;
+import org.junit.Test;
+import question1.PalindromeChecker;
+import question1.PalindromeCheckerCorrect;
+import question1.PalindromeSource;
+import rx.schedulers.Schedulers;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static question1.PalindromeSource.longestPalindrome;
+import static question1.PalindromeSource.longestSubPalindrome;
+import static question1.PalindromeSource.simplePalindrome;
+
+public class PalindromeCheckerTest {
+    private static final int reps = 100;
+
+    PalindromeChecker palindromeChecker;
+    long startTime;
+
+    private double average(long[] durations) {
+        double sum = 0d;
+        for (int ii = 0; ii < durations.length; ii++) {
+            sum += 1.0d * durations[ii];
+        }
+        return sum / durations.length;
+    }
+
+    @Before
+    public void setup() throws Exception {
+        palindromeChecker = SOMETHING ; // TODO
+        String longest = longestPalindrome();
+        assertThat(longest).isNotEmpty();
+    }
+
+    @Test
+    public void testIsPalindrome() throws Exception {
+        long[] durations = new long[reps - 1];
+        for (int ii = 0; ii < reps; ii++) {
+            startTime = System.nanoTime();
+            boolean isPalindrome = palindromeChecker.quickAndDirtyIsPalindrome(longestPalindrome());
+            if (ii != 0) {
+                // Throw out first result b/c of class loader.
+                durations[ii - 1] = System.nanoTime() - startTime;
+                System.out.println(durations[ii - 1]);
+            }
+            assertThat(isPalindrome).isTrue();
+        }
+        System.out.print("Average: ");
+        System.out.print(average(durations) / 1000);
+        System.out.println("ms");
+    }
+
+    @Test
+    public void testFastIsPalindrome() throws Exception {
+        long[] durations = new long[reps - 1];
+        for (int ii = 0; ii < reps; ii++) {
+            startTime = System.nanoTime();
+            boolean isPalindrome = palindromeChecker.fastIsPalindrome(longestPalindrome());
+            if (ii != 0) {
+                // Throw out first result b/c of class loader.
+                durations[ii - 1] = System.nanoTime() - startTime;
+                System.out.println(durations[ii - 1]);
+            }
+            assertThat(isPalindrome).isTrue();
+        }
+        System.out.print("Average: ");
+        System.out.print(average(durations) / 1000);
+        System.out.println("ms");
+    }
+
+    @Test
+    public void testDesignPatternIsPalindrome() throws Exception {
+        long[] durations = new long[reps - 1];
+        for (int ii = 0; ii < reps; ii++) {
+            startTime = System.nanoTime();
+            boolean isPalindrome = palindromeChecker.designPatternsIsPalindrome(longestPalindrome());
+            if (ii != 0) {
+                // Throw out first result b/c of class loader.
+                durations[ii - 1] = System.nanoTime() - startTime;
+                System.out.println(durations[ii - 1]);
+            }
+            assertThat(isPalindrome).isTrue();
+        }
+        System.out.print("Average: ");
+        System.out.print(average(durations) / 1000);
+        System.out.println("ms");
+    }
+
+    @Test
+    public void testSubPalindromes() throws Exception {
+        long[] durations = new long[reps - 1];
+        for (int ii = 0; ii < reps; ii++) {
+            startTime = System.nanoTime();
+            String longestSubstringPalindrome = palindromeChecker.largestPalindromeSubstring(
+                    longestSubPalindrome());
+            if (ii != 0) {
+                // Throw out first result b/c of class loader.
+                durations[ii - 1] = System.nanoTime() - startTime;
+            }
+            assertThat(longestSubstringPalindrome).isNotEmpty();
+            boolean isPalindrome = palindromeChecker.fastIsPalindrome(longestSubstringPalindrome);
+            assertThat(isPalindrome).isTrue();
+        }
+        System.out.print("Average: ");
+        System.out.print(average(durations) / 1000);
+        System.out.println("ms");
+    }
+}

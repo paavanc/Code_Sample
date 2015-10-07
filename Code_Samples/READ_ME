@@ -18,3 +18,8 @@ The best version of xcode to test these apps is 6.1.1.
 The WebApp:
 
 This project is a basic web application that lets users add their emails and receive email notifications based on the weather in their specified city.  The main files to check out in this project are WebApp/mysite/weather/views.py and WebApp/mysite/script.py.  One file is the basic logic for adding a user and the other is a script that calls a weather api and sends emails.
+
+
+The Code Challenge:
+
+Read the READ_ME file in that directory.  Consists of a connect the dot app and a maze application in objective c.
